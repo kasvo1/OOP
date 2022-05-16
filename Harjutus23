@@ -1,0 +1,44 @@
+package Harjutused;
+import java.util.Random;
+import java.util.Scanner;
+public class Harjutus23 {
+
+	public static void main(String[] args) {
+		
+		Random random = new Random(); //tekitab suvalise numbri
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Mitu mängu tahad mängida: "); // küsin mängijalt mitu mängu ta soovib mängida
+		int mängud = reader.nextInt();
+		reader.close();
+		int arvutitäring; //arvutile täring millega tema mängib
+		int mängijatäring; //mängija tärin millega mängija mängib
+		int arvutiskoor = 0; 
+		int mängijaskoor = 0;
+		
+		for(int mäng = 1; mäng <= mängud; mäng++ ) { //1-10 algab 1-st ja iga korraga lisandub üks mäng juurde
+			arvutitäring = random.nextInt( 6 ) +  1; //+1 lisatud, et ei tekiks olukorda kus arvuti veeretab numbri: null.
+			mängijatäring = random.nextInt( 6 ) +  1; 
+			
+			if (arvutitäring  > mängijatäring ) { //kui arvuti saab rohkem silmi siis lisan tema tulemusele +1
+				arvutiskoor = arvutiskoor + 1;
+				System.out.println("Arvuti võitis mängu: " + mäng );
+			} else if (mängijatäring > arvutitäring ) { //kui mängija viskab rohkem kui arvuti, siis lisandub +1 mängijale
+				mängijakoor = mängijakoor + 1; 
+				System.out.println("Mängija võitsin mängu: " + mäng);
+			} else  { // kui arvuti number pole minu omast suurem ja vastupidi, siis määrame ära viigi
+				System.out.println("Round: " + mäng + " viik!");
+				
+			}
+	}
+		
+		if (arvutiskoor > mängijakoor ) { //skoore võrreldes määratakse võitja
+			System.out.println("Arvuti võitis lahingu võites: " + arvutiskoor + "/" + mängud);
+			
+		} else if (mängijaskoor > arvutiskoor) {
+			System.out.println("Mina võitsin lahingu võites: " + mängijaskoor + "/" + mängud);
+		}else if ( mängijaskoor == arvutiskoor){
+			System.out.println("Mäng lõppes viigiga.");
+		}
+	}
+	
+}
