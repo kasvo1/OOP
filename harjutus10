@@ -3,8 +3,8 @@ public class harjutus10 {
 
 	public static void main(String[] args) {
 		int numbrid = 1;
-		while numbrid <= 66 {
-			 for (int i = numbrid; i <= 66; i++) {
+		while numbrid <= 66 { //ütlen ära mis arvuni ma tahan saada numbreid
+			 for (int i = numbrid; i <= 66; i++) { //ütlen et i on võrdne 1-ga, i ei tohi olla suurem kui 66
 				  System.out.print(i);
 			}
 			 System.out.println();
