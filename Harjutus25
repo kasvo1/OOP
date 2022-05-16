@@ -1,21 +1,20 @@
 package Harjutused;
 
 import java.io.*;
-import java.util.ArrayList; //võimaldab manipuleerida ja lisada
-import java.util.Random; // võimaldab genereerida suvalisi numbreid
+import java.util.ArrayList; 
+import java.util.Random;
 
 public class Harjutus25 {
 
 	//Prindib välja ID koguarvu, ehk mitu õpilast on nimekirjas
-    public static void showkõikõpilased(ArrayList<Main> dataList){  //tekitame "andmebaasi" nimega showkõikõpilased mis liiguvad meie tabelisse
+    public static void showkõikõpilased(ArrayList<Main> dataList){  //tekitab "andmebaasi" nimega showkõikõpilased mis liiguvad tabelisse
           System.out.println("1. Kokku kasutajaid:"+(dataList.size()-1));  //-1, kuna alustame lugemist nullist.
         }
     
     public static void showkümmeõpilast(ArrayList<Main> dataList){  
           System.out.println("\n2. Esimese kümne kasutaja info: ");
-        for (int i = 0; i <= 10; i++) {  //kui i on väiksem kui 10, siis lisame +1 kuni saame 10 täis
+        for (int i = 0; i <= 10; i++) {  //kui i on väiksem kui 10, siis lisandub +1 kuni saame 10 täis
             Main item = dataList.get(i); //võtame tabelist 10 elementi
-            //prindime välja id, eesnime, perenime, emaili ja soo.
             System.out.println(item.id+"\t\t"+item.first+"\t\t"+item.last+"\t\t"+item.email+"\t\t"+item.gender); // (\t) tähendab, et jätame topelttühiku vahele aka. tab klahv.
             
             
@@ -33,7 +32,7 @@ public class Harjutus25 {
         Random r = new Random();
         int high = dataList.size(); //määrame, et suvaliselt valitakse KÕIKIDE kasutajate hulgast
         for (int i=1 ; i<4;i++){ //määrab, et loop töötab 3 korda, ehk väljastame 3 nime
-            int random = r.nextInt(high); // suvaliselt genereerime kasutajad mida prindime
+            int random = r.nextInt(high); //suvaliselt genereerime kasutajad mida prindime
             Main randomItem = dataList.get(random); 
             
             //et oleks lihtsam aru saada, lisame päised ka kus näeme ID, nime, emaili ja sugu
