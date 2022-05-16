@@ -1,0 +1,15 @@
+
+public class harjutus10 {
+
+	public static void main(String[] args) {
+		int numbrid = 1;
+		while numbrid <= 66 {
+			 for (int i = numbrid; i <= 66; i++) {
+				  System.out.print(i);
+			}
+			 System.out.println();
+		}
+
+	}
+
+}
