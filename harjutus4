@@ -1,0 +1,11 @@
+package harjutus4;
+
+public class harjutus4 {
+	public static void main(String[] args) {
+		System.out.println("\033[0m ¤¤¤¤¤¤¤¤¤¤¤¤¤"); //ütlen mis värvi ja mida ma tahan näha lõpptulemuses
+		System.out.println("\033[34m ==========="); //ütlen mis värvi ja mida ma tahan näha lõpptulemuses
+		System.out.println("\033[34m -----------"); //ütlen mis värvi ja mida ma tahan näha lõpptulemuses
+		
+	}
+
+}
