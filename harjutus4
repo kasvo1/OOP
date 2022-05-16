@@ -1,4 +1,4 @@
-package harjutus4;
+package Harjutused;
 
 public class harjutus4 {
 	public static void main(String[] args) {
