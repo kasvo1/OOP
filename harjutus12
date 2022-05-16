@@ -1,0 +1,82 @@
+package Harjutused;
+public class Harjutus12 {
+
+	public static void main(String[] args) {
+		kolmnurk1();
+		kolmnurk2();
+		kolmnurk3();
+		kolmnurk4();
+	}
+		static void kolmnurk1() {
+			int i=3,k; 
+			for(i=1;i<=3;i++) // kui i on väiksem kui 3 lisab +1, ehk loop väljastab 3 rida
+			{
+			{
+			System.out.print("");
+			}
+			for(k=1;k<(i*2);k++) //iga reaga lisandub 1+(1*2) tärne
+			{
+			System.out.print("*");
+			}
+			System.out.println();
+			}
+			for(i=3;i>=0;i--) //programm hakkab tärne vähemaks võtma kolmandast reast
+			{
+			{
+			System.out.print("");
+			}
+			for(k=3;k<(i*2);k++)
+			{
+			System.out.print("*");
+			}
+			System.out.println();
+			}
+			}
+		static void kolmnurk2() {
+			int ridu=5;      //määran ära ridade arvu 5
+			for (int i= ridu-1; i>=0 ; i--)  //igast reast lahutab -1 tärni, kuni väärtuseks on 0
+			{
+			for (int k=0; k<=i; k++)  
+			{
+			System.out.print("*");  
+			}  
+			System.out.println(); 
+			}  
+			} 
+		
+		static void kolmnurk3() {
+			System.out.println();     
+			int ridu=5;    
+			for(int i=0; i<ridu; i++) // ütlen ära millisest reast alustada, kui i on väiksem kui 5 lisab ühe tärni reale juurde
+			{    
+			for(int j=0; j<=i; j++)
+			{    
+			System.out.print("*");   
+			}   
+			System.out.println();   
+			}   
+			}   
+		static void kolmnurk4() {
+			System.out.println();
+			int ridu=5; 
+			for(int i= ridu+0;i>=1;i--) 
+			{
+			{
+			System.out.print(""); 
+			}
+			for(int k=1;k<=i;k++)
+			{
+			System.out.print("*");
+			}
+			System.out.println();
+			}
+			for(int i=0; i<ridu; i++)
+			{
+			for(int k=0; k<=i; k++)
+			{
+			System.out.print("*");
+			}
+			System.out.println();
+			}
+		}
+}
